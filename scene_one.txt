@@ -1,0 +1,30 @@
+viewport
+	origin 0 -15 8		# Положение глаза наблюдателя
+	topleft -10 0 15		# Верхний-левый угол экрана
+	bottomleft -10 0 0	# Нижний-левый угол экрана
+	topright 10 0 15		# Верхний-правый угол экрана
+endviewport
+
+materials
+	entry
+		name defoult
+		color 100 100 100		# Цвет поверхности
+		alpha 1
+		reflect 0		# Коэффициент отражения
+		refract 0		# Коэффициент преломления
+	endentry
+endmaterials
+
+geometry
+#	sphere
+#		coords x y z
+#		radius r
+#		material <id>
+#	endsphere
+	triangle
+		vertex -4 5 0
+		vertex 4 5 0
+		vertex 0 11 8
+		material defoult
+	endtriangle
+endgeometry
